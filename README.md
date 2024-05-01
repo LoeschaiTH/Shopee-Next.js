@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+React/NextJs + Tailwind + ANTD + MUI 
+กดรีเฟรช 1-2 ครั้ง ถ้าเว็บไม่ขึ้นนะครับ
 
 First, run the development server:
 
