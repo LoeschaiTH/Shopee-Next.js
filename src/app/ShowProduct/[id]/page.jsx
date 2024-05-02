@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Col, Row , Space, Button } from "antd";
+import { Col, Row, Space, Button } from "antd";
 import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
 import Rating from "@mui/material/Rating";
@@ -63,7 +63,7 @@ function ShowProduct({ params }) {
               }}
             >
               <img
-                src={product.images[0]}
+                src={product.thumbnail}
                 alt={product.title}
                 style={{ maxWidth: "100%", maxHeight: "500px" }}
               />
@@ -149,28 +149,26 @@ function ShowProduct({ params }) {
                 <div></div>
               </div>
               <h2 className="text-orange-600 relative top-[-5px] border p-1 bg-orange-100 rounded-lg text-xs h-6 mt-4 w-24">
-                  <span>ส่วนลด 10 บาท</span>
-                </h2>
-                <h2 className="text-orange-600 relative top-[-5px] border p-1 bg-orange-100 rounded-lg text-xs h-6 mt-4 w-24">
-                  <span>ส่วนลด 20 บาท</span>
-                </h2>
-                <h2 className="text-orange-600 relative top-[-5px] border p-1 bg-orange-100 rounded-lg text-xs h-6 mt-4 w-24">
-                  <span>ส่วนลด 5 %</span>
-                </h2>
+                <span>ส่วนลด 10 บาท</span>
+              </h2>
+              <h2 className="text-orange-600 relative top-[-5px] border p-1 bg-orange-100 rounded-lg text-xs h-6 mt-4 w-24">
+                <span>ส่วนลด 20 บาท</span>
+              </h2>
+              <h2 className="text-orange-600 relative top-[-5px] border p-1 bg-orange-100 rounded-lg text-xs h-6 mt-4 w-24">
+                <span>ส่วนลด 5 %</span>
+              </h2>
               <div className="flex mt-10">
                 <Button onClick={decrement}>-</Button>
-                <div
-                  className="border  border-gray-300 rounded-md  w-8 h-8 flex justify-center items-center"
-                >
+                <div className="border  border-gray-300 rounded-md  w-8 h-8 flex justify-center items-center">
                   <span>{count}</span>
                 </div>
                 <Button onClick={increment}>+</Button>
+                <h1 className="text-gray-400 text-sm mt-1 ml-3">มีสินค้าทั้งหมด {product.stock} ชิ้น</h1>
               </div>
               <Space className="mt-6">
-                <Button >เพิ่มไปยังรถเข็น</Button>
-              <Button>สั่งซื้อสินค้า</Button>
+                <Button>เพิ่มไปยังรถเข็น</Button>
+                <Button>สั่งซื้อสินค้า</Button>
               </Space>
-              
             </div>
           </div>
         </div>

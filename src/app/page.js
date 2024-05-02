@@ -52,8 +52,13 @@ export default function Home() {
     setValue(value);
     console.log(`selected ${value}`);
   };
-  console.log("value",value)
-  const productsInCategory = value === "All" ? products : products.filter((product) => product.category === value);
+  // if(searchTerm){
+
+  // }
+  // else{
+  //   const MapProducts = value === "All" ? products : products.filter((product) => product.category === value);
+  // }
+  const MapProducts = value === "All" ? products : products.filter((product) => product.category === value);
 
 
   return (
@@ -87,8 +92,8 @@ export default function Home() {
 
         <Row gutter={[8, 24]}>
           {console.log("data", products)}
-          {productsInCategory.map((product) => (
-            <div   key={product.id}>
+          {MapProducts.map((product) => (
+            <div   key={product.id} product={product}>
               <Col span={4}>
                 <Link href={`/ShowProduct/${product.id}`} passHref>
                   <div
