@@ -63,7 +63,7 @@ export default function Home() {
 
   return (
     <main className="flex">
-      <div className="my-20 mx-32">
+      <div className="my-20 ml-14">
         <Select
           defaultValue="All"
           style={{

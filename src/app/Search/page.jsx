@@ -54,7 +54,7 @@ function SearchPage() {
     <main className="flex">
       {console.log("key", keyword)}
       {console.log("search", products)}
-      <div className="my-20 mx-32">
+      <div className="my-20 ml-14">
         <Row gutter={[8, 24]}>
           {console.log("data", products)}
           {products.length > 0 ? (
@@ -150,7 +150,7 @@ function SearchPage() {
             ))
           ) : (
             <div className=" flex justify-center items-center text-center ml-96  w-96 h-96 ">
-              <h2 className=" text-5xl text-orange-600">ไม่พบสินค้า {keyword}</h2>
+              <h2 className=" text-5xl text-orange-600">ไม่พบสินค้า "{keyword}"</h2>
             </div>
           )}
         </Row>

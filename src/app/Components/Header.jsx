@@ -66,7 +66,7 @@ function Header() {
                 <Link href="/promotions">โปรโมชั่น</Link>
               </li>
               <li>
-                <Link href="/stores">ร้านค้า</Link>
+                <Link href="/Stores">ร้านค้า</Link>
               </li>
               <li>
                 <Link href="/Cart">ตะกร้า</Link>
