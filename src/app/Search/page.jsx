@@ -1,14 +1,14 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { Col, Row, Space, Select } from "antd";
 import Link from "next/link";
 import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
 import Rating from "@mui/material/Rating";
 
-function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const keyword = searchParams.get("keyword") ?? "1";
   const [products, setProducts] = useState([]);
@@ -158,6 +158,14 @@ function SearchPage() {
         </Row>
       </div>
     </main>
+  );
+}
+
+function SearchPage() {
+  return (
+    <Suspense fallback={<main className="flex" />}>
+      <SearchContent />
+    </Suspense>
   );
 }
 
