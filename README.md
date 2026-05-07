@@ -1,4 +1,4 @@
-[![amplifystatus](https://img.shields.io/badge/Amplify%20main-FAILED-red?logo=awsamplify&logoColor=white)](https://ap-southeast-1.console.aws.amazon.com/amplify/home?region=ap-southeast-1#/dkdj5q6yijv49/branches/main)
+[![amplifystatus](https://img.shields.io/website?url=https%3A%2F%2Fmain.dkdj5q6yijv49.amplifyapp.com&label=Amplify%20main&up_message=SUCCESS&down_message=FAIL&logo=awsamplify&logoColor=white)](https://ap-southeast-1.console.aws.amazon.com/amplify/home?region=ap-southeast-1#/dkdj5q6yijv49/branches/main)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
