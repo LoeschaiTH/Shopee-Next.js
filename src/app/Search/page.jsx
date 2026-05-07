@@ -150,7 +150,9 @@ function SearchPage() {
             ))
           ) : (
             <div className=" flex justify-center items-center text-center ml-96  w-96 h-96 ">
-              <h2 className=" text-5xl text-orange-600">ไม่พบสินค้า "{keyword}"</h2>
+              <h2 className=" text-5xl text-orange-600">
+                ไม่พบสินค้า &quot;{keyword}&quot;
+              </h2>
             </div>
           )}
         </Row>

@@ -71,8 +71,8 @@ function ShowProduct({ params }) {
               <div className=" mt-6">
                 <Row gutter={[8, 8]}>
                   {product.images.map((img) => (
-                    <Space>
-                      <Col span={4} key={img}>
+                    <Space key={img}>
+                      <Col span={4}>
                         <img
                           src={img}
                           alt={`Product Image ${img}`}
